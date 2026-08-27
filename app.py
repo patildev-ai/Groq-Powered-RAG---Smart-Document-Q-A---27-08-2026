@@ -24,7 +24,7 @@ if not groq_api_key or not google_api_key:
     st.stop()
 
 st.set_page_config(page_title="Document Q&A", page_icon="📚")
-st.title("📚 Document Q&A using Gemma & Groq API")
+st.title("📚 Groq powered RAG - Smart Document Q&A")
 
 llm = ChatGroq(groq_api_key=groq_api_key, model="openai/gpt-oss-120b")
 
